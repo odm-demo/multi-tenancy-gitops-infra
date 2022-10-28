@@ -1,6 +1,8 @@
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "120"
   name: norootsquash
   labels:
     tier: management
