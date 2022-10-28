@@ -1,5 +1,7 @@
 kind: DaemonSet
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "120"
   name: norootsquash
   namespace: kube-system
   labels:
